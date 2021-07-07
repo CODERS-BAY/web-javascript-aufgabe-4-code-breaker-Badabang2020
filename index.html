@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
+    <title>Code Breaker</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Code Breaker</h1>
+    </header>
+    <main>
+      <section>
+        <img src="Img/safe.jpg" alt="safe" />
+        <section>
+          <p>
+            <output id="correctPosition1">*</output>
+            <output id="correctPosition2">*</output>
+            <output id="correctPosition3">*</output>
+          </p>
+        </section>
+      </section>
+
+      <section id="userInput">
+        <label>Enter your Code</label>
+        <input type="number" min="000" max="999" id="codeBreakerNumber" />
+        <button id="enter" onclick="startGame()">ENTER</button>
+      </section>
+      <section>
+        <p>Number of tries</p>
+        <p id="counter"></p>
+      </section>
+      <section>
+        <p id="counterTries"></p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script rel="text/javascript" src="JS/javascript.js"></script>
+</html>
